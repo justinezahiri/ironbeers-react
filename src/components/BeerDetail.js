@@ -28,6 +28,9 @@ class BeerDetail extends Component {
   render() {
     return (
       <div>
+        <header>
+          <Navbar />
+        </header>
         <img className="beer" src={this.state.image_url} alt={this.state.name} />
         <h1>{this.state.name}</h1>
         <p>{this.state.tagline}</p>
@@ -44,5 +47,3 @@ class BeerDetail extends Component {
 }
 
 export default BeerDetail;
-
-//const id = this.props.params.match
